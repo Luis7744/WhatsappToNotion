@@ -1,0 +1,36 @@
+{
+  "name": "whatsapp-to-notion",
+  "version": "0.1.0",
+  "description": "Webhook que registra mensajes e imágenes de WhatsApp en una base de datos de Notion",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Luis7744/WhatsappToNotion.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Luis7744/WhatsappToNotion/issues"
+  },
+  "homepage": "https://github.com/Luis7744/WhatsappToNotion#readme",
+  "dependencies": {
+    "@notionhq/client": "^5.3.0",
+    "axios": "^1.13.1",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "mime-types": "^3.0.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.5",
+    "@types/mime-types": "^3.0.1",
+    "@types/node": "^24.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.9.3"
+  }
+}
